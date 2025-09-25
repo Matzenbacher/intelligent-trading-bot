@@ -157,3 +157,30 @@ External integrations
 - https://github.com/ccxt/ccxt A JavaScript / Python / PHP cryptocurrency trading API with support for more than 100 bitcoin/altcoin exchanges
 - https://github.com/aiogram/aiogram Is a pretty simple and fully asynchronous framework for Telegram Bot API
 - https://github.com/sammchardy/python-binance
+
+## Configuração do Ambiente
+
+Para configurar o ambiente de desenvolvimento, siga estes passos:
+
+1. **Clone o repositório** (se ainda não fez):
+   ```bash
+   git clone https://github.com/Matzenbacher/intelligent-trading-bot.git
+   cd intelligent-trading-bot
+   ```
+
+2. **Crie o ambiente virtual**:
+   ```bash
+   python -m venv .venv
+   ```
+
+3. **Ative o ambiente virtual**:
+   ```bash
+   source .venv/bin/activate
+   ```
+
+4. **Instale as dependências**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+Agora você está pronto para executar os scripts do projeto!
