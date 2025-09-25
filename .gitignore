@@ -252,4 +252,5 @@ cython_debug/
 config.json
 /config*.json  # Configs may have credentials
 /MODELS/
-/DATA/
+*.DS-Store
+*.DS_Store

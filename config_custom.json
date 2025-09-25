@@ -1,0 +1,43 @@
+{
+    "train": false,
+    "venue": "custom",
+    "data_folder": "/Users/kaauanmatzenbacher/projects/intelligent-trading-bot/data",
+    "symbol": "CME_MINI_DL_MNQ1",
+    "description": "CME_MINI_DL_MNQ1 5min com sinais",
+    "freq": "5min",
+    "time_column": "time",
+    "label_horizon": 0,
+    "features_horizon": 0,
+    "predict_length": 1000,
+    "data_sources": [
+        {"folder": "CME_MINI_DL_MNQ1", "file": "merged", "column_prefix": ""}
+    ],
+    "merge_file_name": "merged_data.csv",
+    "signal_sets": [
+        {
+            "generator": "copy_columns",
+            "config": {
+                "columns": ["Buy", "Sell"],
+                "names": ["buy_signal", "sell_signal"]
+            }
+        }
+    ],
+    "output_sets": [
+        {
+            "generator": "trader_simulation",
+            "config": {
+                "buy_signal_column": "buy_signal",
+                "sell_signal_column": "sell_signal"
+            }
+        }
+    ],
+    "simulate_model": {
+        "data_start": 0,
+        "data_end": null,
+        "direction": "long",
+        "topn_to_store": 10,
+        "signal_generator": "copy_columns",
+        "buy_sell_equal": false,
+        "grid": {}
+    }
+}
