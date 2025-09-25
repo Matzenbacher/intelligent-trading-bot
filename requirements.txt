@@ -1,25 +1,102 @@
-numpy==1.26.*  # version limited by tensorflow and numba
-pandas==2.*  # version might be important for parsing timestamps
-# numba  # For highlow label generator
-pyarrow  # If parquet is used. Alternatively fastparquet
-
-apscheduler
-click
-tqdm
-
-# Downloaders
-python-binance==1.0.*
-#MetaTrader5>=5.0.4874; sys_platform == 'win32'  # If mt5 venue is used
-#yfinance
-#curl-cffi  # Used in yahoo downloder
-
-# Features/label generation
-# tsfresh  # if tsfresh feature generator is used. It depends on matrixprofile with binary (in pip) only for Python 3.8
-# ta-lib  # Python wrapper for TA-lib (native) library
-
-# Algorithms
-scikit-learn==1.6.*
-lightgbm==4.*
-tensorflow
-
-# seaborn  # if outputs with diagrams are used
+absl-py==2.3.1
+aiohappyeyeballs==2.6.1
+aiohttp==3.12.15
+aiosignal==1.4.0
+appnope==0.1.4
+APScheduler==3.11.0
+asttokens==3.0.0
+astunparse==1.6.3
+attrs==25.3.0
+build==1.3.0
+certifi==2025.8.3
+charset-normalizer==3.4.3
+click==8.3.0
+comm==0.2.3
+contourpy==1.3.3
+cycler==0.12.1
+Cython==3.1.4
+dateparser==1.2.2
+debugpy==1.8.17
+decorator==5.2.1
+executing==2.2.1
+flatbuffers==25.9.23
+fonttools==4.60.0
+frozenlist==1.7.0
+gast==0.6.0
+google-pasta==0.2.0
+grpcio==1.75.0
+h5py==3.14.0
+idna==3.10
+ipykernel==6.30.1
+ipython==9.5.0
+ipython_pygments_lexers==1.1.1
+jedi==0.19.2
+joblib==1.5.2
+jupyter_client==8.6.3
+jupyter_core==5.8.1
+keras==3.11.3
+kiwisolver==1.4.9
+libclang==18.1.1
+lightgbm==4.6.0
+Markdown==3.9
+markdown-it-py==4.0.0
+MarkupSafe==3.0.2
+matplotlib==3.10.6
+matplotlib-inline==0.1.7
+mdurl==0.1.2
+ml-dtypes==0.3.2
+multidict==6.6.4
+namex==0.1.0
+nest-asyncio==1.6.0
+numpy==1.26.4
+opt_einsum==3.4.0
+optree==0.17.0
+packaging==25.0
+pandas==2.3.2
+parso==0.8.5
+pexpect==4.9.0
+pillow==11.3.0
+platformdirs==4.4.0
+prompt_toolkit==3.0.52
+propcache==0.3.2
+protobuf==4.25.8
+psutil==7.1.0
+ptyprocess==0.7.0
+pure_eval==0.2.3
+pyarrow==21.0.0
+pycryptodome==3.23.0
+Pygments==2.19.2
+pyparsing==3.2.5
+pyproject_hooks==1.2.0
+python-binance==1.0.29
+python-dateutil==2.9.0.post0
+pytz==2025.2
+pyzmq==27.1.0
+regex==2025.9.18
+requests==2.32.5
+rich==14.1.0
+scikit-learn==1.6.1
+scipy==1.16.2
+seaborn==0.13.2
+setuptools==80.9.0
+six==1.17.0
+stack-data==0.6.3
+TA-Lib==0.6.7
+tensorboard==2.16.2
+tensorboard-data-server==0.7.2
+tensorflow==2.16.2
+termcolor==3.1.0
+threadpoolctl==3.6.0
+tornado==6.5.2
+tqdm==4.67.1
+traitlets==5.14.3
+typing_extensions==4.15.0
+tzdata==2025.2
+tzlocal==5.3.1
+urllib3==2.5.0
+wcwidth==0.2.14
+websockets==15.0.1
+Werkzeug==3.1.3
+wheel==0.45.1
+wrapt==1.17.3
+yarl==1.20.1
